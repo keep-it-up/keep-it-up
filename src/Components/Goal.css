@@ -18,3 +18,22 @@
     font-size: 30px;
     background-color: aquamarine;
 }
+
+.react-calendar__navigation button {
+    min-width: 100px;
+    background: none;
+    font-size: 40px;
+    background-color: blue;
+}
+
+#score {
+    padding: 10px;
+    margin: 10px;
+    /* align-items: center; */
+    /* display: flex; */
+}
+
+#score .point {
+    padding: 10px;
+    margin: 10px;
+}

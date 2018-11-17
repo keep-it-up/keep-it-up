@@ -6,7 +6,9 @@ export default class Goal extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            date: new Date()
+            date: new Date(),
+            points: 2,
+            consecutive: 2,
         }
     }
 
@@ -18,6 +20,16 @@ export default class Goal extends Component {
     render() {
         return (
             <div className="App">
+            <div id="score">
+            <div id="point">
+                <h1 >Point: {this.state.points}</h1>
+                </div>
+                <div id="consecutive">
+                <h1 >consecutive: {this.state.consecutive}</h1>
+                </div>
+            </div>
+                
+
                 <Calendar
                     onChange={this.onChange}
                     value={this.state.date}
