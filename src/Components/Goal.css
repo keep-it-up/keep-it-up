@@ -1,0 +1,39 @@
+.react-calendar {
+    width: 100em;
+    height: 80em;
+}
+
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.react-calendar__month-view__days > button{
+    font-size: 30px;
+}
+
+.react-calendar__month-view__days > button :hover{
+    font-size: 30px;
+    background-color: aquamarine;
+}
+
+.react-calendar__navigation button {
+    min-width: 100px;
+    background: none;
+    font-size: 40px;
+    background-color: blue;
+}
+
+#score {
+    padding: 10px;
+    margin: 10px;
+    /* align-items: center; */
+    /* display: flex; */
+}
+
+#score .point {
+    padding: 10px;
+    margin: 10px;
+}
