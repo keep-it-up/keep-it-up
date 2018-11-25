@@ -28,3 +28,14 @@ h1 {
     margin: auto;
     background:antiquewhite;
   }
+
+  #submit-close-button {
+    height:35px;
+    width:55px;
+    color: black;
+    background-color: #0099ff ;
+  }
+
+  #submit-close-button:hover {
+    background-color:rgb(0, 217, 255) ;
+  }

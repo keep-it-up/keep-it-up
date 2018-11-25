@@ -35,7 +35,7 @@ export default class Popup extends React.Component {
             </label>
             <br/>
             {/* onSubmit form here*/}
-            <button className="popup-close" onClick={this.props.onClose}>Submit</button>
+            <button id="submit-close-button"className="popup-close" onClick={this.props.onClose}>Submit</button>
           </form>
           
           {this.props.children}
