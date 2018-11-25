@@ -1,4 +1,5 @@
 import React from 'react';
+import './Popup.css'
 
 export default class Popup extends React.Component {
   render() {
@@ -8,8 +9,8 @@ export default class Popup extends React.Component {
     const ratings = [1,2,3,4,5,6,7,8,9,10]
     return (
     
-      <div className="popup-backdrop">
-        <div className="popup">
+      <div className="popup">
+        <div className="popup_inner">
           <h1 id="todays-date">Goal status for {this.props.selectedDate}</h1>
           <label>Rate your Goal</label>
           <form id="daily-rating">
