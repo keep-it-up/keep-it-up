@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Calendar from 'react-calendar'
+import Calendar from './Calendar'
 import './Goal.css'
+// import Popup from './Popup.jsx'
 
 export default class Goal extends Component {
     constructor(props) {
@@ -12,29 +13,23 @@ export default class Goal extends Component {
         }
     }
 
-    onChange = date => this.setState({ date })
-    onClickDay = date => {
-        alert(`today's date is ${date}}`)
-    }
-    
+
+
+    onActiveDateChange = ({ activeStartDate, view }) => alert('Changed view to: ', activeStartDate, view)
+
+
     render() {
         return (
             <div className="App">
-            <div id="score">
-            <div id="point">
-                <h1 >Point: {this.state.points}</h1>
+                <div id="score">
+                    <div id="point">
+                        <h1 >Point: {this.state.points}</h1>
+                    </div>
+                    <div id="consecutive">
+                        <h1 >consecutive: {this.state.consecutive}</h1>
+                    </div>
                 </div>
-                <div id="consecutive">
-                <h1 >consecutive: {this.state.consecutive}</h1>
-                </div>
-            </div>
-                
-
-                <Calendar
-                    onChange={this.onChange}
-                    value={this.state.date}
-                    onClickDay={this.onClickDay}
-                />
+                <Calendar/>
             </div>
         )
     }
