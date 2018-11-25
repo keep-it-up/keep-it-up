@@ -159,6 +159,7 @@ main {
   font-size: 80%;
   padding: .75em 0;
   border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 
 .calendar .body .cell {
@@ -169,10 +170,10 @@ main {
   cursor: pointer;
   background: var(--neutral-color);
   transition: 0.25s ease-out;
+
 }
 
 .calendar .body .cell:hover {
-  /* background: var(--bg-color); */
   background-color: red;
   transition: 0.5s ease-out;
 }
@@ -217,10 +218,9 @@ main {
   font-size: 7em;
   position: absolute;
   top: -.2em;
-  right: .03em;
+  right: .1em;
   transition: .25s ease-out;
   letter-spacing: -.07em;
-  
 }
 
 .calendar .body .cell:hover .bg, .calendar .body .selected .bg  {
